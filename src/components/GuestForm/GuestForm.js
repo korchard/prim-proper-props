@@ -5,19 +5,19 @@ class GuestForm extends Component {
         return(
             <div>
             <h2>Add a new guest</h2>
-            <form onSubmit={this.handleSubmit}>
+            <form onSubmit={this.props.handleSubmit}>
                 <label>
                  Name
                 </label>
             <input
                 type="text"
                 placeholder="Name"
-                value={this.state.newGuest.name}
-                onChange={this.handleChangeFor('name')}
+                value={this.props.newGuest.name}
+                onChange={this.props.handleChangeFor('name')}
             />
             <div>
                 Would this guest like a kid's meal?
-                <div onChange={this.handleChangeFor('kidsMeal')}>
+                <div onChange={this.props.handleChangeFor('kidsMeal')}>
                 <div>
                     <label>
                     <input
