@@ -41,7 +41,7 @@ render() {
 
 ### Leader
 
-Create a `PartyLeader` Component so that the lines in `App.js`:
+[x] Create a `PartyLeader` Component so that the lines in `App.js`:
 
 ```JSX
 <h2>Party Leader</h2>
@@ -56,7 +56,7 @@ Can be replaced by:
 
 ### Silverware
 
-Create a `SilverWare` Component as a reusable Component so that the lines in `DinnerSupplies`:
+[x] Create a `SilverWare` Component as a reusable Component so that the lines in `DinnerSupplies`:
 
 ```JSX
 <div>
