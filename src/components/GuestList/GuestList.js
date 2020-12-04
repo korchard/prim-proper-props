@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Guest from '../Guest/Guest';
 
 class GuestList extends Component {
 
@@ -14,13 +15,7 @@ class GuestList extends Component {
                 </tr>
             </thead>
             <tbody>
-                {this.props.guests.map(guest => (
-                <tr key={guest.name}>
-                    <td>{guest.name}</td>
-                    <td>{guest.kidsMeal}</td>
-                    <td><button onClick={(event) => {return this.props.deleteGuest(event, guest)}}>Delete</button></td>
-                </tr>
-                ))}
+                <Guest key={guest.name} />
             </tbody>
             </table>
             </div>
