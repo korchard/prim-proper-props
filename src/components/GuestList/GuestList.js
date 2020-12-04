@@ -18,7 +18,7 @@ class GuestList extends Component {
                 <tr key={guest.name}>
                     <td>{guest.name}</td>
                     <td>{guest.kidsMeal}</td>
-                    <td><button onClick={(event) => {return this.props.deleteGuest(event)}}>Delete</button></td>
+                    <td><button onClick={(event) => {return this.props.deleteGuest(event, guest)}}>Delete</button></td>
                 </tr>
                 ))}
             </tbody>

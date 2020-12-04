@@ -16,12 +16,12 @@ class App extends Component {
     },
   }
 
-  deleteGuest = (event) => {
+  deleteGuest = (event, newGuest) => {
     console.log('in deleteGuest');
-    this.setState({guestList: this.state.guestList.filter(function() {
-      return guestList !== event.target.value
-      })
+    this.setState({
+      guestList: this.state.guestList.filter(guest => guest !== newGuest)
     })
+
   }
 
   handleChangeFor = (propertyName) => (event) => {
